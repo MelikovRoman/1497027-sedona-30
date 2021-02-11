@@ -74,6 +74,10 @@ img {
   font-weight:700;
 }
 
+.site-navigation .main-header-logo:active {
+  opacity:unset;
+}
+
 /* Features */
 
 .features-city {
@@ -208,6 +212,7 @@ img {
 
 .filter-button {
   color:inherit;
+  text-transform: uppercase;
   background: transparent;
   border: 2px solid white;
   border-radius: 2px;
