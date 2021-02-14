@@ -1,5 +1,6 @@
 :root {
   --basic-black: #000000;
+  --basic-light-black: #333333;
   --basic-gray:  #A9A9A9;
   --basic-white: #ffffff;
   --basic-blue:  #81B3D2;
@@ -68,6 +69,10 @@ img {
   text-align: center;
 }
 
+.headline p {
+  color:var(--basic-light-black);
+}
+
 .headline h2 {
   font-size: 21px;
   line-height: 26px;
@@ -96,6 +101,10 @@ img {
   background-color:var(--basic-light);
 }
 
+.features p {
+  color:var(--basic-light-black);
+}
+
 .features-list {
   list-style: none;
 }
@@ -112,6 +121,7 @@ img {
 
 .recommend-list {
   list-style: none;
+  color:var(--basic-light-black);
 }
  
 .recommend-item {
@@ -122,6 +132,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   font-weight:700;
+  color:var(--basic-black);
 }
 
 /*form-find*/
@@ -135,6 +146,7 @@ img {
 
 .caption-text {
   text-align: center;
+  color:var(--basic-light-black);
 }
 
 .button-open {
@@ -198,6 +210,10 @@ img {
 
 /*catalog*/
 
+legend {
+  font-weight: 700;
+}
+
 .filters {
   font: inherit;
   color:var(--basic-white);
@@ -240,7 +256,7 @@ img {
   text-transform: uppercase;
   background: transparent;
   border:none;
-  border-bottom: 1px dashed #81B3D2;
+  border-bottom: 1px dashed var(--basic-blue);
 }
 
 .sorting-item button:hover,
@@ -259,6 +275,7 @@ img {
 }
 
 .hotels-info h3 {
+  font-size: 21px;
   color:var(--basic-black);
 }
 
@@ -298,6 +315,10 @@ img {
 
 .hotels-item button:active {
   background-color:var(--special-dark-brown)
+}
+
+.rating p {
+  background-color:var(--special-gray);
 }
 
 /*footer*/
