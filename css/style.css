@@ -293,6 +293,11 @@ legend {
   list-style: none;
 }
 
+.hotels-item {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+}
+
 .hotels-info h3 {
   font-size: 21px;
   color:var(--basic-black);
