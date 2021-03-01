@@ -48,11 +48,15 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
   width: 1200px;
   margin: 0 auto;
+  background: #FFFFFF;
+  /*box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);*/
 }
 
 /* Main navigation */
@@ -65,12 +69,12 @@ img {
 }
 
 .site-navigation {
+  font-family: inherit;
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin: 0px 70px 0px 70px;
 }
 
 /* User navigation */
@@ -88,14 +92,21 @@ img {
   opacity: 0.3;
 }
 
+.background-logo {
+  background: url("../img/background-photo.jpg") no-repeat center;
+  width: 100%;
+  height: 510px;
+  background-size: cover;
+  text-align: center;
+}
+
+.background-logo img {
+  margin-top: 77px;
+}
+
 .headline {
   align-items: center;
   text-align: center;
-  background: url("../img/background\ photo.jpg") no-repeat center;
-  width: 100%;
-  height: 726px;
-  background-size: cover;
-  position: relative;
 }
 
 .headline img {
@@ -105,13 +116,14 @@ img {
 .headline p {
   color:var(--basic-light-black);
   line-height: 26px;
-  margin-top: 50px;
   margin-right: 320px;
   margin-left: 320px;
+  padding-top: 35px;
+  padding-bottom: 45px;
 }
 
 .headline h2 {
-  padding-top: 100px;
+  margin-top: 42px;
   font-size: 21px;
   line-height: 26px;
   font-weight:700;
@@ -128,11 +140,13 @@ img {
 .container-features {
   display: flex;
   margin-bottom: -15px;
+  margin-top: 0px;
 }
 
 .container-features-reverse {
 display: flex;
 flex-direction: row-reverse;
+margin-bottom: -7px;
 }
 
 .features-city {
@@ -148,18 +162,45 @@ flex-direction: row-reverse;
   line-height: 21px;
   font-weight:700;
   margin-top: 50px;
+  max-width: 135px;
+  margin-left: 130px;
+  margin-bottom: 25px;
+}
+
+.features-city .title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight:700;
+  margin-top: 50px;
+  max-width: 172px;
+  margin-left: 113px;
+  margin-bottom: 25px;
+}
+
+.features-city p {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 23px;
+}
+
+.features-city .text {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 23px;
 }
 
 .features {
   background-color:var(--basic-light);
-}
-
-.features h2 {
-  margin-top: 0;
+  min-height: 256px;
 }
 
 .features p {
   color:var(--basic-light-black);
+  margin-top: 25px;
+}
+
+.features h2 {
+  margin-top: 0;
 }
 
 .features-list {
@@ -167,7 +208,6 @@ flex-direction: row-reverse;
   list-style: none;
   padding: 0;
   margin: 0;
-  min-height: 256px;
 }
 
 .feature-item {
@@ -218,11 +258,13 @@ flex-direction: row-reverse;
   line-height: 24px;
   font-weight:700;
   text-align: center;
+  margin-top: 58px;
 }
 
 .caption-text {
   text-align: center;
   color:var(--basic-light-black);
+  margin-bottom: 45px;
 }
 
 .button-open {
@@ -289,6 +331,7 @@ flex-direction: row-reverse;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 0px;
 }
 
 /*catalog*/
@@ -388,13 +431,14 @@ legend {
 .hotels-item {
   display: grid;
   grid-template-columns: max-content 1fr max-content;
+  padding: 29px;
 }
 
 .hotels-info h3 {
   font-size: 21px;
   color:var(--basic-black);
-  margin-top: 23px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .hotels-info h3:hover {
@@ -408,10 +452,7 @@ legend {
 
 .main-info {
   margin-left: 29px;
-}
-
-.photo-hotel {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .more-info {
@@ -456,11 +497,10 @@ legend {
 .rating img {
   display: flex;
   margin-left: auto;
-  margin-top: 29px;
 }
 
 .rating {
-  margin-right: 70px;
+  margin-right: 41px;
 }
 
 .rating p {
@@ -478,6 +518,7 @@ legend {
   width: 1200px;
   margin: 0 auto;
   background-color:rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .footer-contacts {
@@ -505,8 +546,14 @@ justify-self: center;
 }
 
  .footer-copyright {
+  display: flex;
   font:inherit;
   justify-self: center;
+  align-items: center;
   line-height: 26px;
   margin-top: 38px;
+ }
+
+ .footer-copyright p{
+   margin-right: 8px;
  }
