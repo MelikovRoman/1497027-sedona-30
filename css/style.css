@@ -56,9 +56,23 @@ img {
   width: 1200px;
   margin: 0 auto;
   background: #FFFFFF;
-  /*box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);*/
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  width: 136px;
+  height: 69px;
+}
+
+.main-logo {
+  width: 136px;
+}
+
+h1 {
+  display: none;
+}
 /* Main navigation */
 
 .main-navigation {
@@ -66,6 +80,7 @@ img {
   line-height: 26px;
   font-weight:700;
   color: var(--basic-black);
+
 }
 
 .site-navigation {
@@ -73,6 +88,8 @@ img {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  align-items: center;
+  min-height: 56px;
   padding: 0;
   margin: 0px 70px 0px 70px;
 }
@@ -116,8 +133,8 @@ img {
 .headline p {
   color:var(--basic-light-black);
   line-height: 26px;
-  margin-right: 320px;
-  margin-left: 320px;
+  margin-right: 340px;
+  margin-left: 340px;
   padding-top: 35px;
   padding-bottom: 45px;
 }
@@ -127,8 +144,8 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight:700;
-  margin-right: 350px;
-  margin-left: 350px;
+  padding-right: 365px;
+  padding-left: 365px;
 }
 
 .site-navigation .main-header-logo:active {
@@ -144,49 +161,48 @@ img {
 }
 
 .container-features-reverse {
-display: flex;
-flex-direction: row-reverse;
-margin-bottom: -7px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: -7px;
 }
 
 .features-city {
- background-color: var(--basic-blue);
- color: var(--basic-white);
- text-align: center;
- width: 400px;
- height: 256px;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  text-align: center;
+  width: 400px;
+  height: 256px;
 }
 
-.features-city h2 {
+.title {
   font-size: 21px;
   line-height: 21px;
   font-weight:700;
-  margin-top: 50px;
-  max-width: 135px;
-  margin-left: 130px;
-  margin-bottom: 25px;
+  margin: 0;
+  padding: 47px 139px 25px 139px;
 }
 
-.features-city .title {
+.number {
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+  padding: 23px 52px 54px 51px;
+}
+
+.title-reverse  {
   font-size: 21px;
   line-height: 21px;
   font-weight:700;
-  margin-top: 50px;
-  max-width: 172px;
-  margin-left: 113px;
-  margin-bottom: 25px;
+  max-height: 43px;
+  margin: 0;
+  padding: 50px 123px 25px 126px;
 }
 
-.features-city p {
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-top: 23px;
-}
-
-.features-city .text {
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 23px;
+.text-reverse {
+  margin: 0;
+  padding: 23px 50px 51px 49px;
 }
 
 .features {
@@ -194,13 +210,13 @@ margin-bottom: -7px;
   min-height: 256px;
 }
 
-.features p {
+.features .number{
   color:var(--basic-light-black);
-  margin-top: 25px;
+  margin: 0;
 }
 
 .features h2 {
-  margin-top: 0;
+  display: none;
 }
 
 .features-list {
@@ -215,15 +231,17 @@ margin-bottom: -7px;
   width: 400px;
 }
 
-.feature-item p {
-  padding-left: 83.5px;
-  padding-right: 74px;
+.text-features {
+  margin: 0;
+  padding: 23px 60px 54px 70px;
 }
 
-.feature-item h3 {
+.title-features {
   font-size: 21px;
   line-height: 21px;
   font-weight:700;
+  margin: 0;
+  padding: 47px 140px 25px 140px;
 }
 
 .recommend-list {
@@ -369,6 +387,7 @@ legend {
   background: transparent;
   border: 2px solid white;
   border-radius: 2px;
+  padding: 7px 35px 8px 36px;
 }
 
 .filter-button:hover {
@@ -424,14 +443,19 @@ legend {
   opacity:unset;
 }
 
+.hotels h2 {
+  display: none;
+}
+
 .hotels ul {
   list-style: none;
+  padding: 0;
 }
 
 .hotels-item {
   display: grid;
   grid-template-columns: max-content 1fr max-content;
-  padding: 29px;
+  padding: 29px 70px 29px 70px;
 }
 
 .hotels-info h3 {
@@ -499,10 +523,6 @@ legend {
   margin-left: auto;
 }
 
-.rating {
-  margin-right: 41px;
-}
-
 .rating p {
   color: #666666;
   background-color:var(--special-gray);
@@ -557,3 +577,4 @@ justify-self: center;
  .footer-copyright p{
    margin-right: 8px;
  }
+
