@@ -172,6 +172,8 @@ h1 {
   text-align: center;
   width: 400px;
   height: 256px;
+  box-sizing: border-box;
+  padding: 47px 44px 54px 44px;
 }
 
 .title {
@@ -179,7 +181,7 @@ h1 {
   line-height: 21px;
   font-weight:700;
   margin: 0;
-  padding: 47px 139px 25px 139px;
+  padding: 0px 84px 25px 84px;
 }
 
 .number {
@@ -188,21 +190,16 @@ h1 {
 
 .text {
   margin: 0;
-  padding: 23px 52px 54px 51px;
+  padding-top: 23px;
 }
 
-.title-reverse  {
+.title-reverse {
   font-size: 21px;
   line-height: 21px;
   font-weight:700;
   max-height: 43px;
   margin: 0;
-  padding: 50px 123px 25px 126px;
-}
-
-.text-reverse {
-  margin: 0;
-  padding: 23px 50px 51px 49px;
+  padding: 0px 80.5px 25px 80.5px;
 }
 
 .features {
