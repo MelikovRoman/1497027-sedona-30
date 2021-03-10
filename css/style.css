@@ -41,6 +41,19 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page {
   height: 100%;
 }
@@ -110,7 +123,7 @@ h1 {
 }
 
 .background-logo {
-  background: url("../img/background-photo.jpg") no-repeat center;
+  background: #c0d6e4 url("../img/background-photo.jpg") no-repeat center;
   width: 100%;
   height: 510px;
   background-size: cover;
@@ -363,28 +376,182 @@ legend {
   background-size: cover;
 }
 
+.filters h2 {
+  display: none;
+}
+
 .filter {
   display: flex;
   min-height: 217px;
   justify-content: space-between;
 }
 
+.filter fieldset {
+  border: none;
+}
+
+fieldset {
+  margin-top: 26.5px;
+}
+
+.infrastructure {
+  margin-left: 70px;
+  padding: 0;
+}
+
+.infrastructure legend,
+.type-house legend {
+  margin-bottom: 12px;
+}
+
+.type-house {
+  margin-left: 119px;
+  padding: 0;
+}
+
 .day-price {
-  width: 400px;
+  width: 375px;
+  padding: 0;
   margin-left: 330px;
+}
+
+.day-price legend{
+  margin-bottom: 10.5px;
 }
 
 .filter ul {
   list-style: none;
+  padding: 0;
+}
+
+.filter-option{
+  margin-bottom: 24px;
+  margin-left: 43px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -42px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.price-controls {
+  height: 32px;
+  width: 314px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid white;
+  border-radius: 2px;
+  position: relative;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: var(--basic-white);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+  cursor: pointer;
+  width: 90px;
+  padding-left: 60px;
+  padding-top: 6.5px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+.range-filter {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  margin-bottom: 0px;
+}
+
+.range-controls {
+  position: relative;
+  width: 316px;
+  margin-bottom: 33px;
+  margin-top: 10px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #ababab;
+  border: 8px solid #ffffff;
+}
+
+.range-controls .toggle-min {
+  left: 0%
+}
+
+.range-controls .toggle-max {
+  left: 80%;
 }
 
 .filter-button {
   color:inherit;
   text-transform: uppercase;
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
   padding: 7px 35px 8px 36px;
+  margin-left: 85px;
+  margin-bottom: 32px;
 }
 
 .filter-button:hover {
@@ -440,8 +607,22 @@ legend {
   opacity:unset;
 }
 
+.page-up,
+.page__down  {
+  background-color: var(--basic-white);
+  border:0px solid;
+  width: 12px;
+  padding: 0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
 .hotels h2 {
   display: none;
+}
+
+.hotels-list {
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .hotels ul {
@@ -453,6 +634,7 @@ legend {
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   padding: 29px 70px 29px 70px;
+  border-top: 1px solid #E5E5E5;
 }
 
 .hotels-info h3 {
@@ -590,4 +772,3 @@ justify-self: center;
  .footer-copyright p{
    margin-right: 8px;
  }
-

@@ -32,54 +32,60 @@
     <section class="filters">
       <h2>Фильтр жилья</h2>  
       <form class="filter" method="get">
-        <fieldset>
+        <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
             <li class="filter-option">
-              <input type="checkbox" id="filter-swimming-pool" name="swimming-pool" checked>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-swimming-pool" name="swimming-pool" checked>
               <label for="filter-swimming-pool">Бассейн</label>
             </li>
             <li class="filter-option">
-              <input type="checkbox" id="filter-parking" name="parking">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-parking" name="parking">
               <label for="filter-parking">Парковка</label>
             </li>
             <li class="filter-option">
-              <input type="checkbox" id="filter-wi-fi" name="wi-fi">
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-wi-fi" name="wi-fi">
               <label for="filter-wi-fi">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="type-house">
           <legend>Тип жилья:</legend>
           <ul>
             <li class="filter-option">
-              <input type="checkbox" id="filter-hotel" name="hotel" checked>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-hotel" name="hotel" checked>
               <label for="filter-hotel">Гостиница</label>  
             </li> 
             <li class="filter-option">
-              <input type="checkbox" id="filter-motel" name="motel" checked>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-motel" name="motel" checked>
               <label for="filter-motel">Мотель</label>  
             </li> 
             <li class="filter-option">
-              <input type="checkbox" id="filter-apartments" name="apartments" checked>
+              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-apartments" name="apartments" checked>
               <label for="filter-apartments">Апартаменты</label>  
             </li>
           </ul>
         </fieldset>
         <fieldset class="day-price">
           <legend>Стоимость в сутки(Р):</legend>
-          <table>
-            <tr>
-              <td>От 0</td>
-              <td>От 3000</td>
-            </tr>
-          </table>
-          <input type="range" min="0" max="3000" class="slider" id="myRange">
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+          </div>
           <button class="filter-button" type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
-    <section class="find-and-sorting">
+    <section class="find-and-sorting"> 
     <div>
       <p class="find">Найдено:3</p>
     </div>
@@ -98,13 +104,17 @@
       </ul>
     </div>
     <div class="plus-and-minus">
-      <button title="сортировка от большнго к меньшему"></button>
-      <button title="сортировка от меньшего к большему"></button>
+      <button class="page-up" title="сортировка от большнго к меньшему">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/></svg>
+      </button>
+      <button class="page__down" title="сортировка от меньшего к большему">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="#CACACA"/></svg>
+      </button>
     </div>
     </section>
     <section class="hotels">
       <h2>Спиcок жилья</h2> 
-      <ul class="hotels-list">
+      <ul class="hotels-list"> 
         <li class="hotels-item">
           <a class="photo-hotel" href="blank.html">
             <img src="img/amara-resort.jpg" widht="135" height="90" alt="Фото гостиницы Amara Resort & Spa">    
