@@ -481,12 +481,13 @@ legend {
   background-color:var(--basic-blue);
   font-weight: 700;
   padding: 3px 16px 3px 17px;
+  display: inline-block;
 } 
 
 .main-info p {
   margin-top: 7px;
   display: inline-block;
-  min-width: 130px;
+  min-width: 110px;
 }
  
 .more-info:hover {
@@ -546,12 +547,25 @@ legend {
 justify-self: center;
 }
 
+.footer-social h3 {
+  display: none;
+}
+
+.visit {
+  margin: 0;
+}
+
+.tel-number {
+  margin-top: 9px;
+}
+
 .contacts-info, 
 .contacts-phone {
   text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight:700;
+  margin: 0;
   color:var(--basic-black);
 }
 
@@ -560,6 +574,7 @@ justify-self: center;
   width: 150px;
   justify-content: space-between;
   list-style: none;
+  margin-top: 36px;
 }
 
  .footer-copyright {
@@ -569,6 +584,7 @@ justify-self: center;
   align-items: center;
   line-height: 26px;
   margin-top: 38px;
+  margin-bottom: 36px;
  }
 
  .footer-copyright p{
