@@ -570,6 +570,8 @@ fieldset {
 .sorting {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  width: 240px;
 }
 
 .find-and-sorting {
@@ -615,6 +617,21 @@ fieldset {
   padding: 0;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.page-up:hover path,
+.page__down:hover path{
+  fill: var(--basic-black);
+}
+
+.page-up:active path,
+.page__down:active path{
+  fill: var(--basic-blue);
+}
+
+.page-up:focus path,
+.page__down:focus path{
+  fill: var(--basic-blue);
 }
 
 .hotels h2 {
@@ -759,6 +776,28 @@ justify-self: center;
   margin-top: 36px;
 }
 
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-blue);
+  color: inherit;
+}
+
+.social-button:hover {
+  background-color: var(--special-blue);
+}
+
+.social-button:active {
+  background-color: var(--special-dark-blue);
+}
+
+.social-button:active svg {
+  opacity: 0.3;
+}
+
  .footer-copyright {
   display: flex;
   font:inherit;
@@ -770,5 +809,13 @@ justify-self: center;
  }
 
  .footer-copyright p{
-   margin-right: 8px;
+  margin-right: 8px;
  }
+
+ .copyright:hover path {
+  fill: var(--basic-blue);
+}
+
+ .copyright:active path {
+  fill: #BDBBBC;
+}
