@@ -448,6 +448,19 @@ fieldset {
   background-position: 0 0;
 }
 
+.filter-input-disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
+}
+
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -458,6 +471,19 @@ fieldset {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-disabled:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -42px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.5;
 }
 
 .price-controls {
@@ -602,6 +628,7 @@ fieldset {
 .sorting-item button:focus {
   color:var(--basic-blue);
   opacity:unset;
+  outline: none;
 }
 
 .sorting-item button:active {
@@ -610,7 +637,7 @@ fieldset {
 }
 
 .page-up,
-.page__down  {
+.page-down  {
   background-color: var(--basic-white);
   border:0px solid;
   width: 12px;
@@ -619,18 +646,23 @@ fieldset {
   cursor: pointer;
 }
 
+.page-up:focus,
+.page-down:focus{
+  outline: none;
+}
+
 .page-up:hover path,
-.page__down:hover path{
+.page-down:hover path{
   fill: var(--basic-black);
 }
 
 .page-up:active path,
-.page__down:active path{
+.page-down:active path{
   fill: var(--basic-blue);
 }
 
 .page-up:focus path,
-.page__down:focus path{
+.page-down:focus path{
   fill: var(--basic-blue);
 }
 
