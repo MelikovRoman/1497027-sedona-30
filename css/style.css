@@ -304,7 +304,7 @@ h1 {
   color:var(--basic-white);
   background-color:var(--basic-brown);
   border: none;
-  padding: 30px 125px 30px 124px;
+  padding: 30px 140px 30px 140px;
 }
 
 .button-open:hover {
@@ -323,7 +323,8 @@ h1 {
   color:var(--basic-white);
   background-color:var(--basic-blue);
   border: none;
-  padding: 16px 182px 16px 181px;
+  padding: 16px 195px 16px 195px;
+  margin-top: 40px;
 }
 
 .button-search:hover {
@@ -334,25 +335,185 @@ h1 {
   background-color: var(--special-dark-blue);
 }
 
-.search-item {
+.travel-map {
+  width: 100%;
+  height: 593px;
+  background: url("../img/map.png") no-repeat;
+}
+
+.search {
+  position: absolute;
+  text-align: center;
+  left: 33%;
+}
+
+.date-in,
+.date-out {
+ display: flex;
+ align-items: baseline;
+ position: relative;
+
+}
+
+.label-date {
+  width: 37%;
+  text-align: left;
   font-size: 14px;
   line-height: 26px;
   font-weight:700;
   text-transform:inherit;
 }
 
-.search-item input {
-  font: inherit;
+.label-text {
+  width: 100%;
+  height: 38px;
+  padding: 0 15px;
+  margin-bottom:29px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight:700;
+  text-transform: uppercase;
+  color:var(--basic-black);
   background-color:var(--special-gray);
-  border:none;
+  border: none;
 }
 
-.search-item input:hover {
+.label-text::placeholder {
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight:700;
+  text-transform: uppercase;
+}
+
+.label-text:hover {
   background-color:var(--special-dark-gray);
 }
 
-.search-item input:focus {
+.label-text:focus {
   background-color:var(--basic-white);
+}
+
+.search-form {
+  padding: 55px;
+  width: 458px;
+  background-color: white;
+  display: block;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.calendar {
+  top:7px;
+  position: absolute;
+  left:94%;
+}
+
+.calendar:hover path {
+  fill:var(--basic-black);
+}
+
+.calendar:active path {
+  fill:var(--basic-blue);
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: -8px;
+  width: 458px;
+}
+
+.info-older {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: -8px;
+  width: 50%;
+}
+
+.info-kids {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: -8px;
+  width: 50%;
+}
+
+.older-label {
+  width: 50%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight:700;
+  text-transform:inherit;
+}
+
+.kids-label {
+  width: 50%;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight:700;
+  text-transform:inherit;
+}
+
+.older-button,
+.kids-button {
+  white-space: nowrap;
+  width: 50%;
+}
+
+.older-numbers,
+.kids-numbers {
+  width: 30px;
+  height: 38px;
+  text-align: center;
+  font: inherit;
+  background-color:var(--special-gray);
+  border:none;
+  margin-left: 0;
+}
+
+.older-number-minus,
+.older-number-plus,
+.kids-number-minus,
+.kids-number-plus {
+  border: none;
+  background-color:var(--special-gray);
+  cursor: pointer;
+  padding: 11px 11px 11px 11px;
+  width: 39px;
+  height: 39px;
+  text-align: center;
+}
+
+.minus-older,
+.minus-kids {
+  vertical-align: middle;
+}
+
+.minus-older:hover rect,
+.minus-kids:hover rect {
+  fill:var(--basic-black);
+}
+
+.minus-older:active rect
+.minus-kids:active rect {
+  fill:var(--basic-blue);
+}
+
+.plus-older:hover path,
+.plus-kids:hover path {
+  fill:var(--basic-black)
+}
+
+.plus-older:active path,
+.plus-kids:active path {
+  fill:var(--basic-blue)
+}
+
+.map-google {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .aside {
@@ -846,7 +1007,7 @@ justify-self: center;
 
  .copyright:hover path {
   fill: var(--basic-blue);
-}
+ }
 
  .copyright:active path {
   fill: #BDBBBC;
