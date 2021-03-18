@@ -324,7 +324,6 @@ h1 {
   background-color:var(--basic-blue);
   border: none;
   padding: 16px 195px 16px 195px;
-  margin-top: 40px;
 }
 
 .button-search:hover {
@@ -420,21 +419,19 @@ h1 {
 .info-wrapper {
   display: flex;
   align-items: baseline;
-  margin-bottom: -8px;
   width: 458px;
+  margin-bottom: 54px;
 }
 
 .info-older {
   display: flex;
   align-items: baseline;
-  margin-bottom: -8px;
   width: 50%;
 }
 
 .info-kids {
   display: flex;
   align-items: baseline;
-  margin-bottom: -8px;
   width: 50%;
 }
 
@@ -467,7 +464,7 @@ h1 {
 .older-numbers,
 .kids-numbers {
   width: 30px;
-  height: 38px;
+  height: 37px;
   text-align: center;
   font-size: 14px;
   line-height: 26px;
