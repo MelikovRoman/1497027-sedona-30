@@ -336,6 +336,8 @@ h1 {
 }
 
 .travel-map {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 593px;
   background: url("../img/map.png") no-repeat;
@@ -344,7 +346,6 @@ h1 {
 .search {
   position: absolute;
   text-align: center;
-  left: 33%;
 }
 
 .date-in,
@@ -453,12 +454,14 @@ h1 {
   line-height: 26px;
   font-weight:700;
   text-transform:inherit;
+  margin-left: 53px;
 }
 
 .older-button,
 .kids-button {
-  white-space: nowrap;
+  display: flex;
   width: 50%;
+  height: 38px;
 }
 
 .older-numbers,
@@ -466,7 +469,11 @@ h1 {
   width: 30px;
   height: 38px;
   text-align: center;
-  font: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight:700;
+  text-transform: uppercase;
+  color:var(--basic-black);
   background-color:var(--special-gray);
   border:none;
   margin-left: 0;
@@ -479,7 +486,6 @@ h1 {
   border: none;
   background-color:var(--special-gray);
   cursor: pointer;
-  padding: 11px 11px 11px 11px;
   width: 39px;
   height: 39px;
   text-align: center;
@@ -495,19 +501,19 @@ h1 {
   fill:var(--basic-black);
 }
 
-.minus-older:active rect
+.minus-older:active rect,
 .minus-kids:active rect {
   fill:var(--basic-blue);
 }
 
 .plus-older:hover path,
 .plus-kids:hover path {
-  fill:var(--basic-black)
+  fill:var(--basic-black);
 }
 
 .plus-older:active path,
 .plus-kids:active path {
-  fill:var(--basic-blue)
+  fill:var(--basic-blue);
 }
 
 .map-google {
@@ -1012,3 +1018,4 @@ justify-self: center;
  .copyright:active path {
   fill: #BDBBBC;
 }
+
