@@ -104,7 +104,30 @@ h1 {
   align-items: center;
   min-height: 56px;
   padding: 0;
-  margin: 0px 70px 0px 70px;
+  margin: 0px 72px 0px 73px;
+}
+
+.nav-item {
+  width: 250px;
+}
+
+.nav-item:first-child {
+  text-align: left;
+}
+
+.nav-item:nth-child(2) {
+  text-align: left;
+  margin-left: -5px;
+}
+
+.nav-item:nth-child(4) {
+  text-align: right;
+  margin-right: -6px;
+  margin-left: 12px;
+}
+
+.nav-item:nth-child(5) {
+  text-align: right;
 }
 
 /* User navigation */
@@ -120,6 +143,10 @@ h1 {
 .site-navigation a:active {
   color:var(--basic-black);
   opacity: 0.3;
+}
+
+.active {
+  color:var(--basic-brown);
 }
 
 .background-logo {
@@ -148,8 +175,8 @@ h1 {
   line-height: 26px;
   margin-right: 340px;
   margin-left: 340px;
-  padding-top: 35px;
-  padding-bottom: 45px;
+  padding-top: 25px;
+  padding-bottom: 38px;
 }
 
 .headline h2 {
@@ -243,7 +270,7 @@ h1 {
 
 .text-features {
   margin: 0;
-  padding: 23px 60px 54px 70px;
+  padding: 23px 69px 54px 69px;
 }
 
 .title-features {
@@ -254,17 +281,24 @@ h1 {
   padding: 47px 140px 25px 140px;
 }
 
+.recommend {
+  margin-bottom: 9px;
+}
+
 .recommend-list {
   display: flex;
   align-items: center;
   list-style: none;
   padding: 0;
+  margin: 0;
   min-height: 330px;
   color:var(--basic-light-black);
 }
  
 .recommend-item {
-  text-align: center;;
+  text-align: center;
+  width: 400px;
+  padding-top: 10px;
 }
 
 .recommend-item p {
@@ -276,6 +310,7 @@ h1 {
   font-size: 21px;
   line-height: 21px;
   font-weight:700;
+  margin-bottom: 27px;
   color:var(--basic-black);
 }
 
@@ -286,13 +321,14 @@ h1 {
   line-height: 24px;
   font-weight:700;
   text-align: center;
-  margin-top: 58px;
+  margin: 57px 457px 35px 447px;
 }
 
 .caption-text {
   text-align: center;
+  line-height: 24px;
   color:var(--basic-light-black);
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 }
 
 .button-open {
@@ -345,6 +381,10 @@ h1 {
 .search {
   position: absolute;
   text-align: center;
+}
+
+.search-off {
+  display: none;
 }
 
 .date-in,
@@ -529,7 +569,13 @@ h1 {
 /*catalog*/
 
 legend {
+  font-size: 16px;
+  line-height: 21px;
   font-weight: 700;
+}
+
+.filter-list{
+  margin-block-start: 0;
 }
 
 .filters {
@@ -555,21 +601,21 @@ legend {
 }
 
 fieldset {
-  margin-top: 26.5px;
+  margin-top: 25px;
 }
 
 .infrastructure {
-  margin-left: 70px;
+  margin-left: 72px;
   padding: 0;
 }
 
 .infrastructure legend,
 .type-house legend {
-  margin-bottom: 12px;
+  margin-bottom: 26px;
 }
 
 .type-house {
-  margin-left: 119px;
+  margin-left: 97px;
   padding: 0;
 }
 
@@ -577,6 +623,7 @@ fieldset {
   width: 375px;
   padding: 0;
   margin-left: 330px;
+  margin-right: 13px;
 }
 
 .day-price legend{
@@ -753,8 +800,13 @@ fieldset {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-left: 70px;
-  margin-right: 46px;
+  margin: 0;
+  padding: 29px 46px 31px 73px;
+}
+
+.sorting-title {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .sorting {
@@ -762,6 +814,8 @@ fieldset {
   display: flex;
   justify-content: space-between;
   width: 240px;
+  margin-block-start: 0;
+  padding-top: 10px;
 }
 
 .find-and-sorting {
@@ -836,6 +890,8 @@ fieldset {
 
 .hotels-list {
   border-bottom: 1px solid #E5E5E5;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .hotels ul {
@@ -846,7 +902,7 @@ fieldset {
 .hotels-item {
   display: grid;
   grid-template-columns: max-content 1fr max-content;
-  padding: 29px 70px 29px 70px;
+  padding: 25px 71px 20px 73px;
   border-top: 1px solid #E5E5E5;
 }
 
@@ -855,6 +911,7 @@ fieldset {
   color:var(--basic-black);
   margin-bottom: 0px;
   margin-top: 0px;
+  width: 220px;
 }
 
 .hotels-info h3:hover {
@@ -880,7 +937,8 @@ fieldset {
 } 
 
 .main-info p {
-  margin-top: 7px;
+  margin-top: 9px;
+  margin-bottom: 16px;
   display: inline-block;
   min-width: 110px;
 }
@@ -901,6 +959,7 @@ fieldset {
   background-color:var(--basic-brown);
   border: none;
   padding: 3px 16px 3px 17px;
+  margin-left: 3px;
 }
 
 .hotels-item button:hover {
@@ -953,10 +1012,12 @@ justify-self: center;
 
 .visit {
   margin: 0;
+  margin-left: 74px;
 }
 
 .tel-number {
-  margin-top: 9px;
+  margin-top: 10px;
+  margin-left: 74px;
 }
 
 .contacts-info, 
@@ -975,6 +1036,7 @@ justify-self: center;
   justify-content: space-between;
   list-style: none;
   margin-top: 36px;
+  padding: 0;
 }
 
 .social-button {
@@ -1005,8 +1067,9 @@ justify-self: center;
   justify-self: center;
   align-items: center;
   line-height: 26px;
-  margin-top: 38px;
+  margin-top: 36px;
   margin-bottom: 36px;
+  margin-right: 74px;
  }
 
  .footer-copyright p{

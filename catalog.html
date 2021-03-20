@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
   </head>
@@ -14,15 +14,15 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
+        <li class="nav-item"><a href="blank.html">Информация</a></li>
+        <li class="nav-item"><a href="blank.html">Фото и видео</a></li>
         <li class="main-logo">
           <a class="main-header-logo" href="index.html">
             <img src="img/logo.png" widht="138" height="70" alt="Логотип Sedona">
           </a>
         </li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li class="nav-item"><a href="blank.html">Карта штата</a></li>
+        <li class="nav-item"><a class="active" href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +34,7 @@
       <form class="filter" method="get">
         <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
-          <ul>
+          <ul class="filter-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-swimming-pool" name="swimming-pool" checked>
               <label for="filter-swimming-pool">Бассейн</label>
@@ -51,7 +51,7 @@
         </fieldset>
         <fieldset class="type-house">
           <legend>Тип жилья:</legend>
-          <ul>
+          <ul class="filter-list"> 
             <li class="filter-option">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-hotel" name="hotel" checked>
               <label for="filter-hotel">Гостиница</label>  
@@ -87,10 +87,10 @@
     </section>
     <section class="find-and-sorting"> 
     <div>
-      <p class="find">Найдено:3</p>
+      <p class="find">Найдено: 3</p>
     </div>
     <div class="nav-sort">
-      <p>Сортировка:</p>
+      <p class="sorting-title">Сортировка:</p>
       <ul class="sorting">
         <li class="sorting-item">
           <button>По цене</button>
