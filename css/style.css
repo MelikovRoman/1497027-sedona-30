@@ -146,8 +146,8 @@ h1 {
   opacity: 0.3;
 }
 
-.active {
-  color:var(--basic-brown) !important;
+.site-navigation a.active {
+  color:var(--basic-brown);
 }
 
 .background-logo {
