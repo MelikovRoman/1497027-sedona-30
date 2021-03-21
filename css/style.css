@@ -30,6 +30,7 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  background-color:var(--special-gray);
 }
 
 a {
@@ -72,15 +73,16 @@ img {
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
 .main-header-logo {
   position: absolute;
   top: 0;
-  width: 136px;
-  height: 69px;
-}
-
-.main-logo {
-  width: 136px;
+  width: 138px;
+  height: 70px;
 }
 
 h1 {
@@ -108,7 +110,7 @@ h1 {
 }
 
 .nav-item {
-  width: 250px;
+  width: 300px;
 }
 
 .nav-item:first-child {
@@ -117,16 +119,15 @@ h1 {
 
 .nav-item:nth-child(2) {
   text-align: left;
-  margin-left: -5px;
+  margin-right: 72px;
+}
+
+.nav-item:nth-child(3) {
+  text-align: right;
+  margin-left: 75px;
 }
 
 .nav-item:nth-child(4) {
-  text-align: right;
-  margin-right: -6px;
-  margin-left: 12px;
-}
-
-.nav-item:nth-child(5) {
   text-align: right;
 }
 
@@ -146,7 +147,7 @@ h1 {
 }
 
 .active {
-  color:var(--basic-brown);
+  color:var(--basic-brown) !important;
 }
 
 .background-logo {
@@ -287,11 +288,9 @@ h1 {
 
 .recommend-list {
   display: flex;
-  align-items: center;
   list-style: none;
-  padding: 0;
+  padding: 60px 0px 56px 0px;
   margin: 0;
-  min-height: 330px;
   color:var(--basic-light-black);
 }
  
@@ -299,6 +298,10 @@ h1 {
   text-align: center;
   width: 400px;
   padding-top: 10px;
+}
+
+.recommend-item:nth-child(3) {
+  padding-top: 5px;
 }
 
 .recommend-item p {
@@ -349,6 +352,7 @@ h1 {
 
 .button-open:active {
   background-color:var(--special-dark-brown);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-search {
@@ -368,6 +372,7 @@ h1 {
 
 .button-search:active {
   background-color: var(--special-dark-blue);
+  color: rgba(255, 255, 255, 0.3); 
 }
 
 .travel-map {
@@ -944,11 +949,12 @@ fieldset {
 }
  
 .more-info:hover {
-  background-color:var(--special-blue)
+  background-color:var(--special-blue);
 }
 
 .more-info:active {
   background-color:var(--special-dark-blue);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-item button {
@@ -959,7 +965,7 @@ fieldset {
   background-color:var(--basic-brown);
   border: none;
   padding: 3px 16px 3px 17px;
-  margin-left: 3px;
+  margin-left: 3px; 
 }
 
 .hotels-item button:hover {
@@ -967,7 +973,8 @@ fieldset {
 }
 
 .hotels-item button:active {
-  background-color:var(--special-dark-brown)
+  background-color:var(--special-dark-brown);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating img {
@@ -987,6 +994,7 @@ fieldset {
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   width: 1200px;
   margin: 0 auto;
   background-color:rgba(255, 255, 255, 0.9);
@@ -1003,7 +1011,7 @@ fieldset {
 }
 
 .footer-social {
-justify-self: center;
+  justify-self: center;
 }
 
 .footer-social h3 {
@@ -1012,12 +1020,12 @@ justify-self: center;
 
 .visit {
   margin: 0;
-  margin-left: 74px;
+  margin-left: 72px;
 }
 
 .tel-number {
   margin-top: 10px;
-  margin-left: 74px;
+  margin-left: 73px;
 }
 
 .contacts-info, 
@@ -1083,4 +1091,3 @@ justify-self: center;
  .copyright:active path {
   fill: #BDBBBC;
 }
-
