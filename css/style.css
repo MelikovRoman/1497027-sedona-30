@@ -177,11 +177,11 @@ h1 {
   margin-right: 340px;
   margin-left: 340px;
   padding-top: 25px;
-  padding-bottom: 38px;
+  padding-bottom: 39px;
 }
 
 .headline h2 {
-  margin-top: 42px;
+  margin-top: 41px;
   font-size: 21px;
   line-height: 26px;
   font-weight:700;
@@ -197,14 +197,12 @@ h1 {
 
 .container-features {
   display: flex;
-  margin-bottom: -15px;
   margin-top: 0px;
 }
 
 .container-features-reverse {
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: -7px;
 }
 
 .features-city {
@@ -231,7 +229,11 @@ h1 {
 
 .text {
   margin: 0;
-  padding-top: 23px;
+  padding-top: 25px;
+}
+
+.image{
+  display: block;
 }
 
 .title-reverse {
@@ -240,7 +242,7 @@ h1 {
   font-weight:700;
   max-height: 43px;
   margin: 0;
-  padding: 0px 80.5px 25px 80.5px;
+  padding: 3px 80.5px 25px 80.5px;
 }
 
 .features {
@@ -289,7 +291,7 @@ h1 {
 .recommend-list {
   display: flex;
   list-style: none;
-  padding: 60px 0px 56px 0px;
+  padding: 50px 0px 58px 0px;
   margin: 0;
   color:var(--basic-light-black);
 }
@@ -324,18 +326,17 @@ h1 {
   line-height: 24px;
   font-weight:700;
   text-align: center;
-  margin: 57px 457px 35px 447px;
+  margin: 56px 457px 33px 447px;
 }
 
 .caption-text {
   text-align: center;
   line-height: 24px;
   color:var(--basic-light-black);
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .button-open {
-  font: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight:700;
@@ -356,9 +357,9 @@ h1 {
 }
 
 .button-search {
-  font: inherit;
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
   text-transform: inherit;
   color:var(--basic-white);
   background-color:var(--basic-blue);
@@ -957,8 +958,9 @@ fieldset {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.hotels-item button {
-  font: inherit;
+.reserve {
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   font-weight: 700;
   color:var(--basic-white);
@@ -968,11 +970,11 @@ fieldset {
   margin-left: 3px; 
 }
 
-.hotels-item button:hover {
+.reserve:hover {
   background-color:var(--special-brown);
 }
 
-.hotels-item button:active {
+.reserve:active {
   background-color:var(--special-dark-brown);
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1069,7 +1071,7 @@ fieldset {
   opacity: 0.3;
 }
 
- .footer-copyright {
+.footer-copyright {
   display: flex;
   font:inherit;
   justify-self: center;
