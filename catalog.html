@@ -14,7 +14,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <div class="logo">
-        <a class="main-header-logo" href="index.html"><img src="img/logo.png" widht="138" height="70" alt="Логотип Sedona"></a>
+        <a class="main-header-logo" href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип Sedona"></a>
       </div>
       <ul class="site-navigation">
         <li class="nav-item"><a href="blank.html">Информация</a></li>
@@ -26,7 +26,7 @@
   </header>
 
   <main class="container">
-    <h1>Гостиницы Седоны</h1>
+    <h1 class="title-hidden">Гостиницы Седоны</h1>
     <section class="filters">
       <h2>Фильтр жилья</h2>  
       <form class="filter" method="post" action="https://echo.htmlacademy.ru">
@@ -50,22 +50,22 @@
         <fieldset class="type-house">
           <legend>Тип жилья:</legend>
           <ul class="filter-list"> 
-            <li class="filter-option">
+            <li class="filter-option-type">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-hotel" name="hotel" checked>
               <label for="filter-hotel">Гостиница</label>  
             </li> 
-            <li class="filter-option">
+            <li class="filter-option-type">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-motel" name="motel" checked>
               <label for="filter-motel">Мотель</label>  
             </li> 
-            <li class="filter-option">
+            <li class="filter-option-type">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" id="filter-apartments" name="apartments" checked>
               <label for="filter-apartments">Апартаменты</label>  
             </li>
           </ul>
         </fieldset>
         <fieldset class="day-price">
-          <legend>Стоимость в сутки(Р):</legend>
+          <legend>Стоимость в сутки (Р):</legend>
           <div class="price-controls">
             <label class="min-price">от <input type="text" name="min-price" value="0"></label>
             <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
@@ -91,23 +91,23 @@
       <p class="sorting-title">Сортировка:</p>
       <ul class="sorting">
         <li class="sorting-item">
-          <button>По цене</button>
+          <a>По цене</a>
         </li>
         <li class="sorting-item">
-          <button>По типу</button>
+          <a>По типу</a>
         </li>
         <li class="sorting-item">
-          <button>По рейтингу</button>
+          <a>По рейтингу</a>
         </li>
       </ul>
     </div>
     <div class="plus-and-minus">
-      <button class="page-up" title="сортировка от большнго к меньшему">
+      <a class="page-up" title="сортировка от большнго к меньшему">
         <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/></svg>
-      </button>
-      <button class="page-down" title="сортировка от меньшего к большему">
+      </a>
+      <a class="page-down" title="сортировка от меньшего к большему">
         <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0H11" fill="#CACACA"/></svg>
-      </button>
+      </a>
     </div>
     </section>
     <section class="hotels">
@@ -115,7 +115,7 @@
       <ul class="hotels-list"> 
         <li class="hotels-item">
           <a class="photo-hotel" href="blank.html">
-            <img src="img/amara-resort.jpg" widht="135" height="90" alt="Фото гостиницы Amara Resort & Spa">    
+            <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">    
           </a>
           <div class="main-info">
             <a class="hotels-info" href="blank.html">
@@ -130,12 +130,12 @@
           </div>
           <div class="rating">
             <img src="img/star-4.svg" width="91" height="17" alt="Звёзды рейтинга">    
-            <p>Рейтинг 8,5</p>    
+            <p>Рейтинг: 8,5</p>    
           </div>
         </li>
         <li class="hotels-item">
           <a class="photo-hotel" href="blank.html">
-            <img src="img/desert-quail.jpg" widht="135" height="90" alt="Фото мотеля Desert Quail Inn">    
+            <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">    
           </a>
           <div class="main-info">
             <a class="hotels-info" href="blank.html">
@@ -150,12 +150,12 @@
           </div>
           <div class="rating">
             <img src="img/star-3.svg" width="66" height="17" alt="Звёзды рейтинга">    
-            <p>Рейтинг 8,9</p>    
+            <p>Рейтинг: 8,9</p>    
           </div> 
         </li> 
         <li class="hotels-item">
           <a class="photo-hotel" href="blank.html">
-            <img src="img/villas-at-poco.jpg" widht="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">    
+            <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Фото апартаментов Villas at Poco Diablo">    
           </a>
           <div class="main-info">
             <a class="hotels-info" href="blank.html">
@@ -170,7 +170,7 @@
           </div>
           <div class="rating">
             <img src="img/star-2.svg" width="42" height="17" alt="Звёзды рейтинга">    
-            <p>Рейтинг 9,2</p>    
+            <p>Рейтинг: 9,2</p>    
           </div> 
         </li>  
       </ul>
@@ -181,7 +181,7 @@
     <div class="footer-contacts">
       <div class="contacts-info">
         <p class="visit">#VisitSedona</p>
-        <p class="tel-number">Тел: <a class="contacts-phone" href="tel:+74956660166">+7(495) 666-01-66</a></p>
+        <p class="telephone-number">Тел: <a class="contacts-phone" href="tel:+74956660166">+7(495) 666-01-66</a></p>
       </div>
     </div>
     <section class="footer-social">
